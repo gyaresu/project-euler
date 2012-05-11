@@ -14,24 +14,45 @@ for (var i=0; i<20; i++) {
     }
 }
 
-for (i=0; i<20; i++) {
-    for (j=0; j<20; j++) {
-        var temp = box[i][j] * box[i+1][j] * box[i+2][j] * box[i+3][j]; // I've got an error here with undefined elements of the array. todo
-
+// diag south east
+for (i=0; i<17; i++) {
+    for (j=0; j<17; j++) {
+        var temp = box[i][j] * (box[i+1][j+1]  ) * (box[i+1][j+2]  ) * (box[i+1][j+3]  );
         if (temp > max) {
             max = temp;
         }
-        //var temp2 = box[i][j+1] * box[i+1][j] * box[i+2][j] * box[i+3][j];
-        var temp2 = box[i][j] *  box[i+1][j+1] * box[i+2][j+2] * box[i+3][j+3];
-
-        if (temp2 > max) {
-            max = temp2;
-        }
-        //var temp2 = box[i][j+1] * box[i+1][j] * box[i+2][j] * box[i+3][j];
-        //console.log(box[i][j] + " " + box[i+1][j+1] + " " +  box[i+2][j+2] + " " +  box[i+3][j+3]);
     }
 }
 
+//diag south west
+for (i=0; i<17; i++) {
+    for (j=3; j<20; j++) {
+        var temp3 = box[i][j] * box[i+1][j-1] * box[i+2][j-2] * box[i+3][j-3];
+        if (temp3 > max) {
+            max = temp3;
+        }
+    }
+}
+
+//straight down
+for (i=0; i<17; i++) {
+    for(j=0; j<20; j++) {
+        var temp2 = box[i][j] *  (box[i+1][j]  ) * (box[i+2][j]  ) * (box[i+3][j]  );
+        if (temp2 > max) {
+            max = temp2;
+        }
+    }
+}
+
+//east west
+for (i=0; i<20; i++) {
+    for (j=0; j<17; j++) {
+        var temp4 = box[i][j] * box[i][j+1] * box[i][j+2] * box[i][j+3];
+        if (temp4 > max) {
+            max = temp4;
+        }
+    }
+}
 
 console.log(max);
 
