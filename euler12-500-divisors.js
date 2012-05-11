@@ -21,33 +21,36 @@ function triangle(x) {
     for (var i=1; i<=x; i++) {
         sum += i;
     }
+    //console.log(sum);
     return sum;
 }
 
-//console.log("This is triangle(7) " + triangle(8));
-
 function factors(x) {
-    var list = [];
-    for (var i=1;i<=x;i++) {
-        if (x % i === 0) {
-            list.push(i);
-            if (list.length >= 500) {
-                console.log("The triangle number is: " + x);
+    console.log(x[0]);
+    var temp = [];
+    for (var i=0;i<x.length;i++) {
+        var current = Math.pow(x[0][i],2);
+        console.log("Squared prime " + current);
+        if (x[1] % current === 0) {
+            temp.push(current);
+            temp.push(x[0][i]);
+            if (temp.length >= 500) {
+                console.log("The triangle number is: " + x[1]);
             }
         }
-        //console.log(list);
     }
+            console.log(temp + " " + x[1]);
 }
+var primeList = [];
 
-//console.log("This is factors(): " + factors(28));
-
-for (var i=70001; i < 70002; i++) {
-    num = triangle(i);
-    //console.log(num + " " + i);
-    factors(num);
-    //console.log("end loop");
+function primes(x) {
+    var z = x;
+    for (var i=2; i<=x; i++) {
+        if (x % i === 0) {
+            primeList.push(i);
+            x = x/i;
+        }
+    }
+    return [primeList, z];
 }
-
-
-
-
+factors(primes(triangle(7)));

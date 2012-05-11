@@ -1,5 +1,5 @@
 var list = [];
-var start = 1e6;
+var start = 100;
 
 function range(x) {
     for (i=2; i<=x; i++) {
