@@ -53,4 +53,4 @@ function primes(x) {
     }
     return [primeList, z];
 }
-factors(primes(triangle(7)));
+factors(primes(triangle(11)));

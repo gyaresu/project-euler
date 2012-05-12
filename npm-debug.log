@@ -1,0 +1,234 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'bigint' ]
+info using npm@1.1.21
+info using node@v0.6.17
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/gyaresu/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose cache add [ 'bigint', null ]
+silly cache add: name, spec, args [ undefined, 'bigint', [ 'bigint', null ] ]
+verbose parsed url { pathname: 'bigint', path: 'bigint', href: 'bigint' }
+verbose addNamed [ 'bigint', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'bigint', '', false ]
+verbose raw, before any munging bigint
+verbose url resolving [ 'https://registry.npmjs.org/', './bigint' ]
+verbose url resolved https://registry.npmjs.org/bigint
+http GET https://registry.npmjs.org/bigint
+http 200 https://registry.npmjs.org/bigint
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"7245FJK760LHCT33SLND67KK6"',
+silly get cb     date: 'Sat, 12 May 2012 06:34:27 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '22333' } ]
+silly name, range, hasData 2 [ 'bigint', '', true ]
+silly versions [ 'bigint',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.5',
+silly versions     '0.0.6',
+silly versions     '0.0.7',
+silly versions     '0.0.8',
+silly versions     '0.0.9',
+silly versions     '0.0.10',
+silly versions     '0.0.11',
+silly versions     '0.0.12',
+silly versions     '0.1.0',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.5',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.8' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.25-darwin-x64-11.3.0',
+verbose bin dist   { shasum: 'c1c9d902c24db37eccdbfdf5a163a9b0347c662b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/bigint/-/bigint-0.3.8.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/bigint/-/bigint-0.3.8.tgz',
+verbose addRemoteTarball   'c1c9d902c24db37eccdbfdf5a163a9b0347c662b' ]
+verbose fetch to /var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/tmp.tgz
+http GET https://registry.npmjs.org/bigint/-/bigint-0.3.8.tgz
+silly updated sha bytes 13523
+info shasum c1c9d902c24db37eccdbfdf5a163a9b0347c662b
+info shasum /var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/tmp.tgz
+verbose unpack /var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry index.js
+silly extracting entry .npmignore
+silly extracting entry package.json
+silly extracting entry todo.txt
+silly extracting entry wscript
+silly extracting entry bigint.cc
+silly extracting entry README.markdown
+silly extracting entry .gitignore
+silly extracting entry examples/simple.js
+silly extracting entry examples/gen.js
+silly extracting entry examples/perfect.js
+silly extracting entry test/seed.js
+silly extracting entry test/big.js
+silly extracting entry test/buf.js
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/package/package.json',
+verbose has wscript     gypfile: false,
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/package/package.json
+verbose loadDefaults bigint@0.3.8
+verbose from cache /var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/package/package.json
+verbose tar.pack [ '/Users/gyaresu/.npm/bigint/0.3.8/package.tgz',
+verbose tar.pack   '/var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/package' ]
+verbose tarball /Users/gyaresu/.npm/bigint/0.3.8/package.tgz
+verbose folder /var/folders/4_/m1s6mms56bl63w40xg64ndb80000gp/T/npm-1336804468390/1336804468390-0.5868712628725916/package
+verbose unpack /Users/gyaresu/.npm/bigint/0.3.8/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry index.js
+silly extracting entry bigint.cc
+silly extracting entry examples/gen.js
+silly extracting entry examples/perfect.js
+silly extracting entry examples/simple.js
+silly extracting entry README.markdown
+silly extracting entry test/big.js
+silly extracting entry test/buf.js
+silly extracting entry test/seed.js
+silly extracting entry todo.txt
+silly extracting entry wscript
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/gyaresu/.npm/bigint/0.3.8/package/package.json',
+verbose has wscript     gypfile: false,
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/gyaresu/.npm/bigint/0.3.8/package/package.json
+verbose loadDefaults bigint@0.3.8
+silly updated sha bytes 13556
+info shasum 191b312515401ac85e5d8408beb4c4e5f41dd555
+info shasum /Users/gyaresu/.npm/bigint/0.3.8/package.tgz
+verbose from cache /Users/gyaresu/.npm/bigint/0.3.8/package/package.json
+verbose chmod /Users/gyaresu/.npm/bigint/0.3.8/package.tgz 644
+verbose chown [ '/Users/gyaresu/.npm/bigint/0.3.8/package.tgz', 502, 502 ]
+silly resolved [ { name: 'bigint',
+silly resolved     version: '0.3.8',
+silly resolved     description: 'Arbitrary-precision integer arithmetic using libgmp',
+silly resolved     main: './index.js',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/substack/node-bigint.git' },
+silly resolved     keywords: 
+silly resolved      [ 'gmp',
+silly resolved        'libgmp',
+silly resolved        'big',
+silly resolved        'bignum',
+silly resolved        'bigint',
+silly resolved        'integer',
+silly resolved        'arithmetic',
+silly resolved        'precision' ],
+silly resolved     author: 
+silly resolved      { name: 'James Halliday',
+silly resolved        email: 'mail@substack.net',
+silly resolved        url: 'http://substack.net' },
+silly resolved     devDependencies: { expresso: '>=0.6.0', binary: '>=0.1.7', put: '>=0.0.5' },
+silly resolved     license: 'MIT/X11',
+silly resolved     engine: { node: '>=0.2.0' },
+silly resolved     scripts: { install: 'node-waf configure build', test: 'expresso' },
+silly resolved     _id: 'bigint@0.3.8',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.21',
+silly resolved     _nodeVersion: 'v0.6.17',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '191b312515401ac85e5d8408beb4c4e5f41dd555' },
+silly resolved     _from: 'bigint' } ]
+info into /Users/gyaresu/programming/projects/euler bigint@0.3.8
+info installOne bigint@0.3.8
+verbose from cache /Users/gyaresu/.npm/bigint/0.3.8/package/package.json
+info unbuild /Users/gyaresu/programming/projects/euler/node_modules/bigint
+verbose unpack /Users/gyaresu/.npm/bigint/0.3.8/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry index.js
+silly extracting entry bigint.cc
+silly extracting entry examples/gen.js
+silly extracting entry examples/perfect.js
+silly extracting entry examples/simple.js
+silly extracting entry README.markdown
+silly extracting entry test/big.js
+silly extracting entry test/buf.js
+silly extracting entry test/seed.js
+silly extracting entry todo.txt
+silly extracting entry wscript
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/gyaresu/programming/projects/euler/node_modules/bigint/package.json',
+verbose has wscript     gypfile: false,
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/gyaresu/programming/projects/euler/node_modules/bigint/package.json
+verbose loadDefaults bigint@0.3.8
+info preinstall bigint@0.3.8
+verbose from cache /Users/gyaresu/programming/projects/euler/node_modules/bigint/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /Users/gyaresu/programming/projects/euler/node_modules/bigint/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /Users/gyaresu/programming/projects/euler/node_modules/bigint
+info build /Users/gyaresu/programming/projects/euler/node_modules/bigint
+verbose from cache /Users/gyaresu/programming/projects/euler/node_modules/bigint/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/gyaresu/programming/projects/euler/node_modules' ]
+info linkStuff bigint@0.3.8
+verbose linkBins bigint@0.3.8
+verbose linkMans bigint@0.3.8
+verbose rebuildBundles bigint@0.3.8
+info install bigint@0.3.8
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node-waf configure build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node-waf configure build' ],
+silly spawning   '/Users/gyaresu/programming/projects/euler/node_modules/bigint' ]
+info bigint@0.3.8 Failed to exec install script
+info unbuild /Users/gyaresu/programming/projects/euler/node_modules/bigint
+verbose from cache /Users/gyaresu/programming/projects/euler/node_modules/bigint/package.json
+info preuninstall bigint@0.3.8
+info uninstall bigint@0.3.8
+verbose unbuild bigint@0.3.8 [ true,
+verbose unbuild bigint@0.3.8   '/Users/gyaresu/programming/projects/euler/node_modules',
+verbose unbuild bigint@0.3.8   '/Users/gyaresu/programming/projects/euler/node_modules' ]
+info postuninstall bigint@0.3.8
+ERR! bigint@0.3.8 install: `node-waf configure build`
+ERR! `sh "-c" "node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the bigint@0.3.8 install script.
+ERR! This is most likely a problem with the bigint package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls bigint
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "install" "bigint"
+ERR! cwd /Users/gyaresu/programming/projects/euler
+ERR! node -v v0.6.17
+ERR! npm -v 1.1.21
+ERR! code ELIFECYCLE
+ERR! message bigint@0.3.8 install: `node-waf configure build`
+ERR! message `sh "-c" "node-waf configure build"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
