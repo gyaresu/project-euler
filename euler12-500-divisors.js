@@ -16,36 +16,39 @@
 //
 // What is the value of the first triangle number to have over five hundred divisors?
 
+var primeList = [];
+
 function triangle(x) {
     var sum = 0;
     for (var i=1; i<=x; i++) {
         sum += i;
     }
-    //console.log(sum);
     return sum;
 }
 
-function factors(x) {
-    console.log(x[0]);
-    var temp = [];
-    for (var i=0;i<x.length;i++) {
-        var current = Math.pow(x[0][i],2);
-        console.log("Squared prime " + current);
-        if (x[1] % current === 0) {
-            temp.push(current);
-            temp.push(x[0][i]);
-            if (temp.length >= 500) {
-                console.log("The triangle number is: " + x[1]);
-            }
-        }
+function sumPrimes(x,y) {
+    var primeSum = [];
+    while (x % y === 0) {
+        primeSum.push(y);
+        x = x/y;
     }
-            console.log(temp + " " + x[1]);
+    return x;
+
 }
-var primeList = [];
+
+
+
+function factors(x) {
+    for (var i=0; i<x[0].length; i++) {
+        x[1] = sumPrimes(x[1],x[0][i]);
+    }
+    return primeSum.length;
+}
+
 
 function primes(x) {
     var z = x;
-    for (var i=2; i<=x; i++) {
+    for (var i=2; i<=x+1; i++) {
         if (x % i === 0) {
             primeList.push(i);
             x = x/i;
@@ -53,4 +56,10 @@ function primes(x) {
     }
     return [primeList, z];
 }
-factors(primes(triangle(11)));
+
+var start = 2;
+while (primeSum.length <= 498) {
+    factors(primes(triangle(start)));
+    console.log(primeSum);
+    start++;
+}
