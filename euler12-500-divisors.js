@@ -17,6 +17,7 @@
 // What is the value of the first triangle number to have over five hundred divisors?
 
 var primeList = [];
+var primeSum = [];
 
 function triangle(x) {
     var sum = 0;
@@ -25,26 +26,6 @@ function triangle(x) {
     }
     return sum;
 }
-
-function sumPrimes(x,y) {
-    var primeSum = [];
-    while (x % y === 0) {
-        primeSum.push(y);
-        x = x/y;
-    }
-    return x;
-
-}
-
-
-
-function factors(x) {
-    for (var i=0; i<x[0].length; i++) {
-        x[1] = sumPrimes(x[1],x[0][i]);
-    }
-    return primeSum.length;
-}
-
 
 function primes(x) {
     var z = x;
@@ -55,6 +36,22 @@ function primes(x) {
         }
     }
     return [primeList, z];
+}
+
+function sumPrimes(x,y) {
+    while (x % y === 0) {
+        primeSum.push(y);
+        x = x/y;
+    }
+    return x;
+
+}
+
+function factors(x) {
+    for (var i=0; i<x[0].length; i++) {
+        x[1] = sumPrimes(x[1],x[0][i]);
+    }
+    return primeSum.length;
 }
 
 var start = 2;
