@@ -101,7 +101,7 @@ var bignum = [37107287533902102798797998220837590246510135740250,
 
 sum = 0;
 for (var i=0; i<bignum.length; i++) {
-    sum += bignum[0];
+    sum += bignum[i];
 }
 
 console.log(sum);
