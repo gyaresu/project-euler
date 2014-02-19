@@ -12,17 +12,14 @@ arg = int(sys.argv[1])
 total = 0
 group = []
 
-
-# If halved then halve again etc. until False and then thirds. Then halves etc.
-
 def proper(n):
+  """Return the sum of all proper numbers divisible in 'n'"""
   x = [1.0]
   i = 2.0
   while i < n:
     if n % i == 0:
       x.append(i)
       i += 1.0
-      #return proper(n/i)
     else:
       i += 1.0
   return sum(x)
@@ -34,6 +31,7 @@ for x in range(0, arg+1):
   if proper(result) == x and result != x:
     group.append(result)
     group.append(x)
+    print result, x
 
 for each in set(group):
   total += each
