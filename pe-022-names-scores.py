@@ -18,13 +18,11 @@ for item in d:
 
 for item in e:
   temp = 0
+
   for each in item:
-    #print each
-    #print alpha.index(each) + 1
     temp += alpha.index(each) + 1
 
   total += count * temp
   count += 1
-  #print temp
-  #print total
+
 print total
