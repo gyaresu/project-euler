@@ -16,9 +16,7 @@ def findDivisors(x):
 # Integers above 28123
 
 total = 0
-neg = 0
 head = 28123
-#head = 100
 count = 1
 abundant = []
 add = []
@@ -33,7 +31,5 @@ ab_copy = abundant
 for num, item  in enumerate(abundant):
   for second in ab_copy:
     add.append(item + second)
-
-#group = sorted(list(set(add)))
 
 print sum(set(range(1,head+1)) - set(add))
