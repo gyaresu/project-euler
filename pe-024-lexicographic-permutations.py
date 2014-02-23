@@ -1,8 +1,8 @@
 import sys
 import itertools
 
-x = list(itertools.permutations(range(0,10), 10))
-y = x[1000001]
+x = list(itertools.permutations(range(10), 10))
+y = x[999999]
 total = ''
 
 for i in y:
