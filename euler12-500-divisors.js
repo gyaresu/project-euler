@@ -22,7 +22,7 @@ var primeList = [];
 var primeSum = [];
 
 function triangle(x) {
-    var sum = 0;
+    var sum = x;
     for (var i=1; i<=x; i++) {
         sum += i;
     }
@@ -59,6 +59,8 @@ function factors(x) {
 var start = 2;
 while (primeSum.length <= 498) {
     factors(primes(triangle(start)));
-    console.log(primeSum);
+    //console.log(primeSum);
     start++;
 }
+
+
